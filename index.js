@@ -5,15 +5,19 @@ var writable = require('stream-wrapper').writable
 function stream(map) {
 
   function write(chunk, enc, next) {
-    var layer = L.geoJson(chunk)
-    var label = createLabel(chunk.properties)
-
-    if(label.length > 0) layer.bindPopup(label)
+    var layer = L.geoJson(chunk, {
+      onEachFeature: createPopup
+    })
     layer.addTo(map)
     next()
   }
   
   return writable({objectMode: true}, write)
+}
+
+function createPopup(feature, layer) {
+    var label = createLabel(feature.properties)
+    if(label.length > 0) layer.bindPopup(label)
 }
 
 function createLabel(props) {
