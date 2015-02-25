@@ -1,0 +1,24 @@
+{
+  "name": "leaflet-stream",
+  "version": "1.0.0",
+  "description": "Pipe geojson into a map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finnp/leaflet-stream.git"
+  },
+  "keywords": [
+    "geojson",
+    "map",
+    "leaflet"
+  ],
+  "author": "Finn Pauls",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finnp/leaflet-stream/issues"
+  },
+  "homepage": "https://github.com/finnp/leaflet-stream"
+}
