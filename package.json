@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/finnp/leaflet-stream/issues"
   },
-  "homepage": "https://github.com/finnp/leaflet-stream"
+  "homepage": "https://github.com/finnp/leaflet-stream",
+  "dependencies": {
+    "leaflet": "^0.7.3",
+    "readable-stream": "^1.1.33",
+    "stream-wrapper": "^0.1.2"
+  }
 }
