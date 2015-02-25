@@ -2,6 +2,8 @@
 [![NPM](https://nodei.co/npm/leaflet-stream.png)](https://nodei.co/npm/leaflet-stream/)
 
 
+Install with `npm install leaflet-stream`.
+
 Pipe geojson objects into a leaflet map object. Every object will be on their own 
 layer and geojson properties will be converted to popups.
 
@@ -27,6 +29,6 @@ stream.write({
 stream.end()
 ```
 
-![Eiffel Tower]('screen.png')
+![Eiffel Tower](screen.png)
 
-This module is similar to and inspired by leaflet-geojson-stream.
+This module is similar to and inspired by [leaflet-geojson-stream](http://npm.im/leaflet-geojson-stream)
